@@ -3,6 +3,10 @@ set background=dark
 colorscheme solarized
 let g:solarized_termtrans=1
 
+"Tabs to 2 spaces
+:set expandtab
+:set tabstop=2
+
 " Make Vim more useful
 set nocompatible
 " Use the OS clipboard by default (on versions compiled with `+clipboard`)
