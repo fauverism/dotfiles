@@ -20,6 +20,21 @@
  17 map <F6> :tabe<Space>
  18 let g:netrw_liststyle=3
  19 let g:netrw_browse_split=3
+ 
+ " Highlight current line
+set cursorline
+" Make tabs as wide as two spaces
+set tabstop=2
+" Show “invisible” characters
+set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
+set list
+" Highlight searches
+set hlsearch
+" Ignore case of searches
+set ignorecase
+" Highlight dynamically as pattern is typed
+set incsearch
+
  20
  21 "Indent guidelines
  22 let g:indent_guides_auto_colors = 0
