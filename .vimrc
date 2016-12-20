@@ -59,6 +59,9 @@ let g:netrw_browse_split=3
 "Vundle Plugins
 call plug#begin('~/.vim/plugged')
 
+"Vim Wiki
+Plug 'vimwiki/vimwiki'
+
 "Hybrid Colorscheme
 Plug 'w0ng/vim-hybrid'
 
