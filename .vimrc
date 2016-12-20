@@ -1,10 +1,19 @@
-"Colorscheme settings
-"autocmd BufEnter * colorscheme onedark 
-"autocmd BufEnter *.css colorscheme lucario
-"autocmd BufEnter *.scss colorscheme jellybeans 
 set background=dark
-syntax enable
+syntax on 
+
+"For onedark color scheme
+if (empty($TMUX))
+  if (has("nvim"))
+    let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+    endif
+  if (has("termguicolors"))
+    set termguicolors
+    endif
+endif
+let g:onedark_termcolors=256
+let g:onedark_terminal_italics=1
 colorscheme onedark 
+
 set nocompatible
 set colorcolumn=80
 set regexpengine=1
@@ -12,11 +21,6 @@ set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
-map <F7> :tabp<CR>
-map <F8> :tabn<CR>
-map <F6> :tabe<Space>
-let g:netrw_liststyle=3
-let g:netrw_browse_split=3
 set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_
 set list
 " Highlight searches
@@ -46,8 +50,17 @@ set title
      au BufReadPost * set relativenumber
      endif
 
+map <F7> :tabp<CR>
+map <F8> :tabn<CR>
+map <F6> :tabe<Space>
+let g:netrw_liststyle=3
+let g:netrw_browse_split=3
+
 "Vundle Plugins
 call plug#begin('~/.vim/plugged')
+
+"Hybrid Colorscheme
+Plug 'w0ng/vim-hybrid'
 
 " Syntax for SCSS
 Plug 'JulesWang/css.vim'
@@ -100,6 +113,9 @@ Plug 'honza/vim-snippets'
 
 "Highlighting
 Plug 'digitaltoad/vim-jade'
+
+"polygot for syntax stuff
+Plug 'sheerun/vim-polyglot'
 
 " Add plugins to &runtimepath
 call plug#end()
