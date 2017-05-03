@@ -1,8 +1,2 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/home/rfauve200/snap/www/app/views'
-let g:netrw_dirhist_2='/home/rfauve200/revere-ui/www'
-let g:netrw_dirhist_3='/home/rfauve200/revere-ui/www/bin'
-let g:netrw_dirhist_4='/home/rfauve200/revere-ui/www/tests'
-let g:netrw_dirhist_5='/home/rfauve200/revere-ui/www'
-let g:netrw_dirhist_6='/home/rfauve200/revere-ui/www/app/api'
+let g:netrw_dirhist_cnt =0

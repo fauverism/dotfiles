@@ -59,6 +59,9 @@ let g:netrw_browse_split=3
 "Vundle Plugins
 call plug#begin('~/.vim/plugged')
 
+"vim bookmarks
+Plug 'MattesGroeger/vim-bookmarks'
+
 "Vim Wiki
 Plug 'vimwiki/vimwiki'
 
@@ -95,7 +98,6 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'scrooloose/syntastic'
 Plug 'kien/ctrlp.vim'
-Plug 'pangloss/vim-javascript'
 Plug 'mattn/emmet-vim'
 Plug 'nathanaelkane/vim-indent-guides'
 
